@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Do João</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1>Formulário</h1>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="validateForm()">Enviar</button>
+        </form>
+
+        <div id="successMessage" class="hidden mt-3 alert alert-success">
+            <p>Formulário enviado com sucesso!</p>
+        </div>
+
+        <div id="errorMessage" class="hidden mt-3 alert alert-danger">
+            <p>Preencha todos os campos corretamente.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
